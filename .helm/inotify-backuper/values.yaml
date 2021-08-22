@@ -3,10 +3,10 @@
 # Declare variables to be passed into your templates.
 
 image:
-  repository: egeneralov/inotify-backuper
+  repository: ghcr.io/egeneralov/inotify-backuper/inotify-backuper
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart version.
-  tag: "5"
+  tag: v1.0.1
 
 imagePullSecrets: []
 nameOverride: ""
