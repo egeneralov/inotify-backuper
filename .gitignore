@@ -1,0 +1,4 @@
+vendor
+*.iso
+cloud-init/*-data
+.idea

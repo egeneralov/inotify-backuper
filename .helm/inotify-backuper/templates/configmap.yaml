@@ -1,0 +1,12 @@
+{{- if .Values.configuration }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "inotify-backuper.fullname" . }}
+  labels:
+    {{- include "inotify-backuper.labels" . | nindent 4 }}
+data:
+  config.yaml: |
+    {{- toYaml .Values.configuration | nindent 4 }}
+{{- end }}
